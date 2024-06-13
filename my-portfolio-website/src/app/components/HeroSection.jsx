@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
+
 const HeroSection = () => {
   return (
     <section>
@@ -9,7 +12,22 @@ const HeroSection = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-lime-500">
               Hello I'm{" "}
             </span>
-            Russel
+            <br></br>
+            <TypeAnimation
+              sequence={[
+                "Russel Tjahjadi",
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "a Software Engineer",
+                1000,
+                "a Web Developer",
+                1000,
+                "a Mobile App Developer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={45}
+              repeat={Infinity}
+            />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa
@@ -18,7 +36,7 @@ const HeroSection = () => {
             ex beatae.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit bg-[#00df9a] mr-4 hover:bg-[#00cf9a] ">
+            <button className="px-6 py-3 w-full sm:w-fit bg-[#00df9a] mr-4 hover:bg-[#00cf9a] text-black">
               Hire Me
             </button>
             <button className="px-6 py-3  w-full sm:w-fit bg-transparent rounded text-[#00df9a] border border-[#00df9a] hover:bg-[#00df9a] hover:text-black mt-3">
