@@ -21,7 +21,7 @@ This portfolio website is built using the following technologies:
 
 - **Front-end**: 🌐 HTML, 🎨 CSS, 💻 JavaScript, ⚛️ React
 - **Back-end (if applicable)**: 👾 Node.js
-- \*\*Useful Extensions: ⚛️ ES7 React/Redux/GraphQL/React-Native snippets, 🎨 Tailwind CSS IntelliSense
+- **Useful Extensions**: ⚛️ ES7 React/Redux/GraphQL/React-Native snippets, 🎨 Tailwind CSS IntelliSense
 
 ## Contributing 🤝
 
