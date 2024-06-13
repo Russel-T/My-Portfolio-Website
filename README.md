@@ -1,6 +1,6 @@
-# My-Portfolio-Website 💻
+# My-Portfolio-Website 🖼️ 
 
-Welcome to my personal portfolio website! This repository houses the code and content for my online portfolio, where I showcase my skills, projects, and achievements as a software engineer.
+Welcome to my personal portfolio website! This repository houses the code and content for my online portfolio, where I showcase my skills, projects, and achievements as a software engineer. 💻
 
 ## About 🤔
 
