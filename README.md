@@ -37,3 +37,7 @@ If you have any questions, inquiries, or would like to discuss potential opportu
 💼 LinkedIn: https://www.linkedin.com/in/russeltjahjadi/
 
 Thank you for visiting my portfolio website! 🎉
+
+
+## Tips:
+- How to use https to push changes: git config --global credential.useHttpPath true
