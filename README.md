@@ -21,7 +21,6 @@ This portfolio website is built using the following technologies:
 
 - **Front-end**: 🌐 HTML, 🎨 CSS, 💻 JavaScript, ⚛️ React
 - **Back-end (if applicable)**: 👾 Node.js
-- 
 ## Contributing 🤝
 
 While this repository primarily serves as a showcase of my personal portfolio, I welcome any suggestions, bug reports, or improvements. Feel free to open an issue or submit a pull request if you have any ideas or contributions.
