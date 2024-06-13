@@ -16,7 +16,7 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 "Russel Tjahjadi",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000,
                 "a Software Engineer",
                 1000,
                 "a Web Developer",
