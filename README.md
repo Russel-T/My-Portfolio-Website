@@ -41,8 +41,3 @@ If you have any questions, inquiries, or would like to discuss potential opportu
 💼 LinkedIn: https://www.linkedin.com/in/russeltjahjadi/
 
 Thank you for visiting my portfolio website! 🎉
-
-## Tips:
-
-- How to use https to push changes: git config --global credential.useHttpPath true
-- When you set that to true, you can set the remote origin using https or ssh to push your changes to github
