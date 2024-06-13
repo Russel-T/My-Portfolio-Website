@@ -30,10 +30,11 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa
-            id, laborum quasi distinctio possimus ex expedita, accusamus
-            suscipit aspernatur quo aliquid sequi. Nihil vero dicta at molestias
-            ex beatae.
+            Computer science student at the University of Illinois at Chicago,
+            with a passion for learning and solving problems through technology.
+            Experienced in various programming languages and software
+            engineering principles, eager to contribute to impactful projects
+            and grow in a software engineering role.
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit bg-[#00df9a] mr-4 hover:bg-[#00cf9a] text-black">
