@@ -35,7 +35,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 If you have any questions, inquiries, or would like to discuss potential opportunities, please don't hesitate to reach out to me:
 
-📧 Email: russel.abraham123@gmail.com
-💼 LinkedIn: https://www.linkedin.com/in/russeltjahjadi/
+- 📧 Email: russel.abraham123@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/russeltjahjadi/
 
 Thank you for visiting my portfolio website! 🎉
