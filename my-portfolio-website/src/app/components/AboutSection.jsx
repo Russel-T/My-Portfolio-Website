@@ -9,7 +9,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul>
+      <ul className="list-disc">
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript</li>
@@ -24,7 +24,7 @@ const TAB_DATA = [
     title: "Experience",
     id: "experience",
     content: (
-      <ul>
+      <ul className="list-disc">
         <li>
           Web Developer @{" "}
           <a
@@ -50,7 +50,7 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul>
+      <ul className="list-disc">
         <li>
           University of Illinois at Chicago:
           <a
@@ -77,29 +77,17 @@ const AboutSection = () => {
   };
   return (
     <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image
-          src="/images/Computer Image.jpg"
-          alt="computerImage"
-          width={500}
-          height={500}
-        />
-        <div>
+      <div className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16">
+        <Image src="/images/Computer Image.jpg" width={500} height={500} />
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
+          <p className="text-white text-base lg:text-lg">
             I am a graduate from the University of Illinois at Chicago, actively
             seeking opportunities in software engineering or any web-based
             roles. My technical expertise includes working with HTML, CSS,
             JavaScript, Python, C++, C#, and cloud computing platforms like
             Firebase and Azure Active Directory, version control like git
             (github) and Confluence to ensure team collaboration.
-            <br /> <br />
-            With a strong foundation in these technologies, I am a quick learner
-            who is always eager to expand my knowledge and skill set. I thrive
-            in collaborative environments and am passionate about working with
-            others to create amazing applications. I am excited to bring my
-            enthusiasm for teamwork and innovation to a dynamic team where we
-            can build impactful solutions together.
           </p>
           <div className="flex flex-row mt-8">
             <TabButton
