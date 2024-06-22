@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl  lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
               Hello I'm{" "}
             </span>
 
@@ -38,15 +38,9 @@ const HeroSection = () => {
             and grow in a software engineering role.
           </p>
           <div>
-            {/* <button className="px-6 py-3 w-full sm:w-fit bg-[#00df9a] mr-4 hover:bg-[#00cf9a] text-black">
-              Hire Me
-            </button> */}
             <button className="px-6 py-3 w-full sm:w-fit bg-blue-500 mr-4 hover:bg-blue-400 text-white rounded-full">
               Hire Me
             </button>
-            {/* <button className="px-6 py-3  w-full sm:w-fit bg-transparent rounded text-[#00df9a] border border-[#00df9a] hover:bg-[#00df9a] hover:text-black mt-3">
-              My Resume
-            </button> */}
             <button className="px-6 py-3  w-full sm:w-fit bg-transparent text-blue-500 border border-blue-500 hover:bg-blue-500 hover:text-white mt-3 rounded-full">
               My Resume
             </button>
