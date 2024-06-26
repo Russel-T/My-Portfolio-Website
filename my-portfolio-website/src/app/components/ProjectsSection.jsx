@@ -7,6 +7,8 @@ const projectsData = [
     description: "Description 1",
     imgUrl: "images/projects/Calculator-project.png",
     tag: ["All", "Web"],
+    gitUrl: "https://russel-t.github.io/Simple-Calculator-App/",
+    previewUrl: "https://github.com/Russel-T/Simple-Calculator-App",
   },
 ];
 const ProjectsSection = () => {
@@ -23,6 +25,8 @@ const ProjectsSection = () => {
             description={project.description}
             imgUrl={project.imgUrl}
             tags={project}
+            gitUrl={project.gitUrl}
+            previewUrl={project.previewUrl}
           />
         ))}
       </div>

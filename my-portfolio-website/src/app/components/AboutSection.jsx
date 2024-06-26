@@ -13,10 +13,6 @@ const TAB_DATA = [
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript</li>
-        <li>Python</li>
-        <li>Firebase</li>
-        <li>Azure Active Directory</li>
-        <li>Git</li>
       </ul>
     ),
   },
@@ -89,7 +85,7 @@ const AboutSection = () => {
             Firebase and Azure Active Directory, version control like git
             (github) and Confluence to ensure team collaboration.
           </p>
-          <div className="flex flex-row mt-8">
+          <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
