@@ -1,10 +1,15 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 import Image from "next/image";
 const ContactForm = () => {
   const form = useRef();
+  const [formData, setFormData] = useState({
+    from_name: "",
+    from_email: "",
+    message: "",
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,12 +21,22 @@ const ContactForm = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setFormData({ from_name: "", from_email: "", message: "" });
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
   };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
       <div>
@@ -63,6 +78,8 @@ const ContactForm = () => {
               name="from_name"
               class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
               placeholder="Your name here!"
+              value={formData.from_name}
+              onChange={handleChange}
             />
           </div>
 
@@ -75,6 +92,8 @@ const ContactForm = () => {
               placeholder="Your email here!"
               type="email"
               name="from_email"
+              value={formData.from_email}
+              onChange={handleChange}
             />
           </div>
 
@@ -86,6 +105,8 @@ const ContactForm = () => {
               name="message"
               placeholder="Let's talk about..."
               class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              value={formData.message}
+              onChange={handleChange}
             />
           </div>
 
