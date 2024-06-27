@@ -53,11 +53,53 @@ const ContactForm = () => {
       </div>
 
       <div>
-        <form className="flex flex-col gap-4" ref={form} onSubmit={sendEmail}>
-            <label htmlFor="" className="text-white">
-
+        <form ref={form} onSubmit={sendEmail}>
+          <div className="mb-6">
+            <label class="block mb-2 text-sm font-medium text-white">
+              Name
             </label>
-            </form>
+            <input
+              type="text"
+              name="from_name"
+              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              placeholder="Your name here!"
+            />
+          </div>
+
+          <div className="mb-6">
+            <label class="block mb-2 text-sm font-medium text-white">
+              Email
+            </label>
+            <input
+              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              placeholder="Your email here!"
+              type="email"
+              name="user_email"
+            />
+          </div>
+
+          <div className="mb-6">
+            <label class="block mb-2 text-sm font-medium text-white">
+              Message
+            </label>
+            <textarea
+              name="message"
+              placeholder="Let's talk about..."
+              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+            />
+          </div>
+
+          <div className="mb-6">
+            <button
+              type="submit"
+              value="Send"
+              class="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+            >
+              {" "}
+              Send message{" "}
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
