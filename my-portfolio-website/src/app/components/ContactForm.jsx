@@ -10,7 +10,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_9udy9ou", "template_qm1igot", form.current, {
+      .sendForm("service_9udy9ou", "template_p18z68s", form.current, {
         publicKey: "-rK2dGng-ABYedwAi",
       })
       .then(
@@ -74,7 +74,7 @@ const ContactForm = () => {
               class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
               placeholder="Your email here!"
               type="email"
-              name="user_email"
+              name="from_email"
             />
           </div>
 
