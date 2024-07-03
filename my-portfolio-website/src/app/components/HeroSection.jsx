@@ -2,14 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-
+import Link from "next/link";
 const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place self-center text-center sm:text-left">
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl  lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
               Hello I'm{" "}
             </span>
 
@@ -30,6 +30,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
+
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Computer science student at the University of Illinois at Chicago,
             with a passion for learning and solving problems through technology.
@@ -38,10 +39,16 @@ const HeroSection = () => {
             and grow in a software engineering role.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit bg-blue-500 mr-4 hover:bg-blue-400 text-white rounded-full">
+            <button className="px-8 py-4 w-full sm:w-fit bg-gradient-to-br from-pink-700 to-blue-600 hover:from-purple-700 hover:to-purple-700 text-white rounded-full text-lg mt-1 mr-5">
               Hire Me
             </button>
-            <button className="px-6 py-3  w-full sm:w-fit bg-transparent text-blue-500 border border-blue-500 hover:bg-blue-500 hover:text-white mt-3 rounded-full">
+
+            {/* <Link to="/#contact">
+              <a className="px-8 py-4 w-full sm:w-fit bg-gradient-to-br from-pink-700 to-blue-600 hover:from-purple-700 hover:to-purple-700 text-white rounded-full text-lg mt-1 mr-5">
+                Hire Me
+              </a> */}
+            {/* </Link> */}
+            <button className="px-8 py-4  w-full sm:w-fit bg-transparent text-blue-500 border border-blue-500 hover:bg-blue-500 hover:text-white mt-3 rounded-full">
               My Resume
             </button>
           </div>
