@@ -43,26 +43,27 @@ const ContactForm = () => {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
     >
       <div>
-        <h5 className="text-xl font-bold text-white my-2">Let's Connect!</h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <h5 className="text-5xl font-bold text-white my-2">Let's Connect!</h5>
+        <p className="text-[#ADB7BE] mb-4 max-w-md text-lg">
           {" "}
-          I'm currently looking for opportunities, my inbox is always open.
-          Whether you have a question or just want to say hi, I'll try my best
-          to get back to you!
+          I'm actively seeking opportunities and welcome your messages. Whether
+          you have inquiries or simply want to connect, I'll make every effort
+          to respond promptly!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/Russel-T">
-            <Image
-              src="/icons/icons8-github.svg"
-              alt="GitHub"
-              width={80}
-              height={80}
-            />
-          </Link>
           <Link href="https://www.linkedin.com/in/russeltj/">
             <Image
               src="/icons/icons8-linkedin.svg"
               alt="Linkedin"
+              width={80}
+              height={80}
+            />
+          </Link>
+
+          <Link href="https://github.com/Russel-T">
+            <Image
+              src="/icons/icons8-github.svg"
+              alt="GitHub"
               width={80}
               height={80}
             />
@@ -73,21 +74,7 @@ const ContactForm = () => {
       <div>
         <form ref={form} onSubmit={sendEmail}>
           <div className="mb-6">
-            <label class="block mb-2 text-sm font-medium text-white">
-              Name
-            </label>
-            <input
-              type="text"
-              name="from_name"
-              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
-              placeholder="Your name here!"
-              value={formData.from_name}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className="mb-6">
-            <label class="block mb-2 text-sm font-medium text-white">
+            <label class="block mb-2 text-xl font-medium text-white">
               Email
             </label>
             <input
@@ -101,7 +88,21 @@ const ContactForm = () => {
           </div>
 
           <div className="mb-6">
-            <label class="block mb-2 text-sm font-medium text-white">
+            <label class="block mb-2 text-xl font-medium text-white">
+              Subject
+            </label>
+            <input
+              type="text"
+              name="from_name"
+              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              placeholder="Your name here!"
+              value={formData.from_name}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="mb-6">
+            <label class="block mb-2 text-xl font-medium text-white">
               Message
             </label>
             <textarea

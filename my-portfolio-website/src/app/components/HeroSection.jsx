@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place self-center text-center sm:text-left">
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
               Hello I'm{" "}
             </span>
@@ -31,13 +31,15 @@ const HeroSection = () => {
             />
           </h1>
 
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          {/* <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Computer science student at the University of Illinois at Chicago,
             with a passion for learning and solving problems through technology.
             Experienced in various programming languages and software
             engineering principles, eager to contribute to impactful projects
             and grow in a software engineering role.
-          </p>
+          </p> */}
+          <br></br>
+          <br></br>
           <div>
             <Link
               href="/#contact"
@@ -47,7 +49,7 @@ const HeroSection = () => {
             </Link>
 
             <Link
-              href="/#contact"
+              href="/"
               className="px-8 py-4 w-full sm:w-fit bg-gradient-to-br from-pink-500 to-blue-400 hover:from-purple-700 hover:to-purple-700 text-white rounded-full text-lg mt-1 mr-5"
             >
               My Resume

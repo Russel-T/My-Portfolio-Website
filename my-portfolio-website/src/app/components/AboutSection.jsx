@@ -78,7 +78,7 @@ const AboutSection = () => {
       <div className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16">
         <Image src="/images/Computer Image.jpg" width={900} height={900} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4 mt-2">About Me</h2>
           <p className="text-white text-base lg:text-lg">
             I am a graduate from the University of Illinois at Chicago, actively
             seeking opportunities in software engineering or any web-based
