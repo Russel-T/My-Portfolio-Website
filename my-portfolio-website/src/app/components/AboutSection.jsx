@@ -13,6 +13,8 @@ const TAB_DATA = [
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript</li>
+        <li>Firebase</li>
+        <li>Azure Active Directory</li>
       </ul>
     ),
   },
@@ -74,7 +76,11 @@ const AboutSection = () => {
   return (
     <section className="text-white">
       <div className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16">
-        <Image src="/images/Computer Image.jpg" width={500} height={500} />
+        <Image
+          src="/images/roozbeh-eslami-YlVjrBkfXt8-unsplash.jpg"
+          width={900}
+          height={900}
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-white text-base lg:text-lg">

@@ -41,13 +41,17 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-8 py-4 w-full sm:w-fit bg-gradient-to-br from-pink-700 to-blue-600 hover:from-purple-700 hover:to-purple-700 text-white rounded-full text-lg mt-1 mr-5"
+              className="px-8 py-4 w-full sm:w-fit bg-gradient-to-br from-pink-500 to-blue-400 hover:from-purple-700 hover:to-purple-700 text-white rounded-full text-lg mt-1 mr-5"
             >
               Hire Me
             </Link>
-            <button className="px-8 py-4  w-full sm:w-fit bg-transparent text-blue-500 border border-blue-500 hover:bg-blue-500 hover:text-white mt-3 rounded-full">
+
+            <Link
+              href="/#contact"
+              className="px-8 py-4 w-full sm:w-fit bg-gradient-to-br from-pink-500 to-blue-400 hover:from-purple-700 hover:to-purple-700 text-white rounded-full text-lg mt-1 mr-5"
+            >
               My Resume
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
