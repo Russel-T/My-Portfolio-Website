@@ -43,7 +43,7 @@ const ContactForm = () => {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
     >
       <div>
-        <h5 className="text-5xl font-bold text-white my-2">Let's Connect!</h5>
+        <h5 className="text-5xl font-bold text-white">Let's Connect!</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md text-lg">
           {" "}
           I'm actively seeking opportunities and welcome your messages. Whether
@@ -74,11 +74,11 @@ const ContactForm = () => {
       <div>
         <form ref={form} onSubmit={sendEmail}>
           <div className="mb-6">
-            <label class="block mb-2 text-xl font-medium text-white">
+            <label className="block mb-2 text-xl font-medium text-white">
               Email
             </label>
             <input
-              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
               placeholder="Your email here!"
               type="email"
               name="from_email"
@@ -88,13 +88,13 @@ const ContactForm = () => {
           </div>
 
           <div className="mb-6">
-            <label class="block mb-2 text-xl font-medium text-white">
+            <label className="block mb-2 text-xl font-medium text-white">
               Subject
             </label>
             <input
               type="text"
               name="from_name"
-              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
               placeholder="Your name here!"
               value={formData.from_name}
               onChange={handleChange}
@@ -102,13 +102,13 @@ const ContactForm = () => {
           </div>
 
           <div className="mb-6">
-            <label class="block mb-2 text-xl font-medium text-white">
+            <label className="block mb-2 text-xl font-medium text-white">
               Message
             </label>
             <textarea
               name="message"
               placeholder="Let's talk about..."
-              class="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+              className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
               value={formData.message}
               onChange={handleChange}
             />
@@ -118,7 +118,7 @@ const ContactForm = () => {
             <button
               type="submit"
               value="Send"
-              class="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
               {" "}
               Send message{" "}
