@@ -14,7 +14,7 @@ const projectsData = [
 const ProjectsSection = () => {
   return (
     <section id="projects">
-      <div className="py-12">
+      <div className="py-16">
         <h2 className="text-center text-4xl font-bold text-white mt-4">
           My Projects
         </h2>
@@ -32,9 +32,6 @@ const ProjectsSection = () => {
           ))}
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
     </section>
   );
 };
